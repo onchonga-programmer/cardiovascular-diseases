@@ -1,0 +1,24 @@
+# CVD Death Rate Forecasting — EDA Notebook Dependencies
+# Python 3.10+
+# Install with: pip install -r requirements.txt
+
+# ── Data fetching ──────────────────────────────────────────────
+requests==2.31.0          # HTTP calls to OWID, WHO GHO, World Bank APIs
+pandas==2.2.1             # Core data manipulation
+numpy==1.26.4             # Numerical ops
+
+# ── EDA & statistics ───────────────────────────────────────────
+statsmodels==0.14.1       # ACF / PACF plots, variance decomposition
+scipy==1.13.0             # Stats utilities
+
+# ── Visualisation ──────────────────────────────────────────────
+matplotlib==3.8.4         # Base plotting
+seaborn==0.13.2           # Statistical plots (heatmaps, distributions)
+
+# ── Notebook environment ───────────────────────────────────────
+jupyter==1.0.0
+ipykernel==6.29.4
+
+# ── Utilities ──────────────────────────────────────────────────
+python-dotenv==1.0.1      # Load .env for AWS creds later (good habit now)
+tqdm==4.66.2              # Progress bars on API loops
